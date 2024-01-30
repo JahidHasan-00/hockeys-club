@@ -26,7 +26,7 @@
 </head>
 <body>
     <header class="container mx-auto py-12">
-        <!-- Nav bar -->
+        <!-- Nav bar section-->
         <div class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown">
@@ -57,9 +57,125 @@
                 <a class="rounded-lg text-white bg-color-primary font-bold text-2 py-4 px-6">Get Ticket</a>
             </div>
           </div>
+
+          <!-- Banner section -->
+          <div>
+            <div class="carousel mt-14 w-full">
+              <div id="slide1" class="carousel-item relative w-full">
+                <img src="./assets/Images/1.png" class="w-full" />
+                <div class="flex justify-center lg:justify-start absolute transform lg:-translate-y-1/2 left-5 right-5 bottom-[5%]">
+                  <div class="relative flex gap-5">
+                      <a href="#slide2" class="btn btn-circle text-white bg-black">❮</a> 
+                      <a href="#slide2" class="btn btn-circle text-white bg-black">❯</a>
+                  </div>
+                </div>
+              </div> 
+              <div id="slide2" class="carousel-item relative w-full">
+                <img src="./assets/Images/hockey-players.jpg" class="w-full rounded-xl" />
+                <div class="flex justify-center lg:justify-start absolute transform lg:-translate-y-1/2 left-5 right-5 bottom-[5%]">
+                  <div class="relative flex gap-5">
+                      <a href="#slide1" class="btn btn-circle text-white bg-black">❮</a> 
+                      <a href="#slide1" class="btn btn-circle text-white bg-black">❯</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Meet all the heroes from the field -->
+            <div class="bg-black mt-4 relative w-[100%] lg:w-[35%] lg:right-[-50%] lg:bottom-[230px] p-8 rounded-xl ">
+              <h3 class="text-2xl font-extrabold text-white">Meet all the heroes from the field</h3>
+              <p class="text-base font-medium text-gray-400">Discover the thrill of the game, the camaraderie of a team, and the joy of victory with your club</p>
+          </div>
+          </div>
+
     </header>
     <main class="container mx-auto">
+        <!-- Professional Hockeys Club section  -->
+        <section>
+          <div class="text-center mt-10 py-8 space-y-6 border-dashed border-t-2 border-b-2">
+            <h2 class="text-4xl font-extrabold">Professional Hockeys Club</h2>
+            <p class="text-base font-medium"> As a premier hockey club, we are dedicated to fostering a love for the sport and building a community of passionate players and fans.</p>
+          </div>
+          <!-- Club Facilities -->
+          <div class="flex gap-5 flex-col lg:flex-row py-14">
+            <!-- Prayer Facility -->
+            <div class="text-center space-y-3">
+              <div class="radial-progress text-2xl font-extrabold text-[#FF4240] bg-[#E7E7E8] rotate-180" style="--value:87;" role="progressbar"><span class="rotate-180 text-black font-extrabold">87%</span></div>
+              <h4 class="text-2xl font-semibold">Prayer Facility</h4>
+              <p class="text-base font-normal">Our thoughtfully designed space is open to individuals of all faiths, providing a quiet retreat for personal meditation and prayer.</p>
+            </div>
+            <!-- Experienced Coach -->
+            <div class="text-center space-y-3">
+              <div class="radial-progress text-2xl font-extrabold text-[#49D293] bg-[#E7E7E8]  rotate-180" style="--value:95;" role="progressbar"><span class="rotate-180 text-black font-extrabold">95%</span></div>
+              <h4 class="text-2xl font-semibold">Experienced Coach</h4>
+              <p class="text-base font-normal">Elevate your game with the guidance of our seasoned and accomplished hockey coach. With a wealth of experience and a proven track record of success.</p>
+            </div>
+            <!-- Senior Player -->
+            <div class="text-center space-y-3">
+              <div class="radial-progress text-2xl font-extrabold text-[#FFB546] bg-[#E7E7E8]  rotate-180" style="--value:90;" role="progressbar"><span class="rotate-180 text-black font-extrabold">90%</span></div>
+              <h4 class="text-2xl font-semibold">Senior Player</h4>
+              <p class="text-base font-normal">In the heart of our team, we proudly introduce our esteemed senior player whose journey on the ice tells a story of dedication, skill, and unwavering passion for the game.</p>
+            </div>
+            <!-- Training Ground -->
+            <div class="text-center space-y-3">
+              <div class="radial-progress text-2xl font-extrabold text-[#4C8DF1] bg-[#E7E7E8]  rotate-180" style="--value:80;" role="progressbar"><span class="rotate-180 text-black">80%</span></div>
+              <h4 class="text-2xl font-semibold">Training Ground</h4>
+              <p class="text-base font-normal">Our cutting-edge training ground is more than just a facility; it's the beating heart of our team's preparation and dedication.</p>
+            </div>
 
+          </div>
+          
+        </section>
+        <!-- Program Sections -->
+        <section>
+            <div class="text-center mt-10 py-8 space-y-6 border-dashed border-t-2 border-b-2">
+              <h2 class="text-4xl font-extrabold">Program Sections</h2>
+              <p class="text-base font-medium">Depending on the specific programs our hockey club offers, here are some different program sections on our website.</p> 
+            </div>
+            <!-- Grid Card -->
+            <div class="grid gap-6 grid-cols-1 lg:grid-cols-2 lg:grid-rows-2">
+                <!-- Grid Junior Section -->
+              <div class="card bg-base-100 shadow-xl image-full">
+                <figure><img src="./assets/Images/2.png" alt="Juniors image" /></figure>
+                <div class="flex px-10 z-20 flex-col justify-center space-y-6 text-white">
+                  <h2 class="card-title text-3xl font-extrabold">Junior Program</h2>
+                  <p>Embark on a journey of skill development and sportsmanship with our Junior Hockey Development Program. We understand the importance of nurturing young talent and fostering a love for the game early on.</p>
+                  <div class="card-actions justify-start">
+                    <button class="btn text-2xl font-bold px-5 text-white bg-color-primary border-none rounded-lg">Register Now!</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Grid Teenager Section -->
+              <div class="card bg-base-100 shadow-xl image-full">
+                <figure><img src="./assets/Images/3.png" alt="Juniors image" /></figure>
+                <div class="flex px-10 z-20 flex-col justify-center space-y-6 text-white">
+                  <h2 class="card-title text-3xl font-extrabold">Junior Program</h2>
+                  <p>Embark on a journey of skill development and sportsmanship with our Junior Hockey Development Program. We understand the importance of nurturing young talent and fostering a love for the game early on.</p>
+                  <div class="card-actions justify-start">
+                    <button class="btn text-2xl font-bold  px-5 text-white bg-color-primary border-none rounded-lg">Register Now!</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Grid Professional Section -->
+              <div class="card lg:col-span-2 bg-base-100 image-full">
+                <figure><img class="w-[100%]" src="./assets/Images/4.png" alt="Juniors image" /></figure>
+                <div class="flex px-10 z-20 flex-col justify-center space-y-6 text-white">
+                  <h2 class="card-title text-3xl font-extrabold">Professional Program</h2>
+                  <p class="w-[70%]">Our Professional Development Program is crafted for those seeking to elevate their game to the highest level of competition. This program is more than just training; it's a pathway to a professional hockey career.</p>
+                  <div class="card-actions justify-start">
+                    <button class="btn text-2xl font-bold  px-5 text-white bg-color-primary border-none rounded-lg">Register Now!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+        </section>
+        <!-- Our New Products -->
+        <section class="mt-24">
+            <div class="py-8 space-y-6 text-center border-dashed border-t-2 border-b-2">
+              <h2 class="text-4xl font-extrabold">Our New Products</h2>
+              <p class="text-base font-medium">We are excited to introduce a range of new products that not only celebrate the spirit of the game but also let you showcase your allegiance to the team in style.</p>
+            </div>
+        </section>
     </main>
     <footer>
 
