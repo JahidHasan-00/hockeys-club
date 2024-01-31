@@ -427,7 +427,7 @@
                   </div>
 
                   <!-- Pricing -->
-                  <div class="border-b-2 border-gray-100 rounded-none collapse collapse-plus">
+                  <div class="collapse collapse-plus">
                     <input type="radio" name="my-accordion-3" /> 
                     <div class="collapse-title text-xl font-medium">
                       Pricings
@@ -449,68 +449,100 @@
           </div>
 
           <!--Hero Section or Form Section -->
-          <div class="flex justify-between mt-12 min-h-screen bg-base-200">
+          <div class="mt-12">
             <div class="flex gap-5 flex-col lg:flex-row">
-              <!-- Hero  -->
-              <div class="flex gap-5 flex-col p-12 border rounded-2xl">
-                <!-- 1st -->
-                <div class="bg-[#BCED6D1A] rounded-xl w-full">
-                  <div class="card-body space-y-6">
-                    <span><img src="./assets/Images/Group-1.png" alt=""></span>
-                    <p class="text-base text-gray-400 font-medium">Phone Number : <br>
-                        <span class="font-extrabold text-[#131318]">(+62) 123-321-543</span>
-                    </p>
-                  </div>
-                </div>
-                <!-- 2nd -->
-                <div class="bg-[#FDDD5F1A] rounded-xl w-full">
-                  <div class="card-body space-y-6">
-                    <span><img src="./assets/Images/Group-2.png" alt=""></span>
-                    <p class="text-base text-gray-400 font-medium">Email : <br>
-                        <span class="font-extrabold text-[#131318]">hockeys@support.com</span>
-                    </p>
-                  </div>
-                </div>
-                <!-- 3rd -->
-                <div class="bg-[#629CF31A] rounded-xl w-full">
-                  <div class="card-body space-y-6">
-                    <span><img src="./assets/Images/Group-3.png" alt=""></span>
-                    <p class="text-base text-gray-400 font-medium">Location : <br>
-                        <span class="font-extrabold text-[#131318]">152/1 Mohakhali Wireless Gate</span>
-                    </p>
-                  </div>
+              <div class="flex w-[45%] gap-5 p-12 border rounded-2xl border-gray-200 flex-col justify-between">
+                  <!-- Contact with phone -->
+              <div class="bg-[#BCED6D1A] card">
+                <div class="card-body space-y-6">
+                  <span><img src="./assets/Images/Group-1.png" alt=""></span>
+                  <p class="text-base font-extrabold"><span class="font-normal text-gray-400">Phone Number :</span><br>
+                    (+62) 123-321-543
+                  </p>
                 </div>
               </div>
-              <!-- Hero Form start-->
-              <div class="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                <form class="card-body">
-                  <div class="form-control">
-                    <label class="label">
-                      <span class="label-text">Email</span>
-                    </label>
-                    <input type="email" placeholder="email" class="input input-bordered" required />
+              <!-- Contact with email -->
+              <div class="bg-[#FDDD5F1A] card">
+                <div class="card-body space-y-6">
+                  <span><img src="./assets/Images/Group-2.png" alt=""></span>
+                  <p class="text-base font-extrabold"><span class="font-normal text-gray-400">Email :</span><br>
+                    hockeys@support.com
+                  </p>
+                </div>
+              </div>
+              <!-- Contact at office -->
+              <div class="bg-[#629CF31A] card">
+                <div class="card-body space-y-6">
+                  <span><img src="./assets/Images/Group-3.png" alt=""></span>
+                  <p class="text-base font-extrabold"><span class="font-normal text-gray-400">Location :</span><br>
+                    152/1 Mohakhali Wireless Gate
+                  </p>
+                </div>
+              </div>
+              </div>
+              <!-- form  -->
+              <div class="flex-1 card shrink-0">
+                <form class="">
+                  <div class="grid gap-6 grid-cols-1 grid-row-4 lg:grid-row-2 lg:grid-cols-2">
+                    <div class="">
+                      <label class="label">
+                        <span class="label-text text-base font-bold">Your Name</span>
+                      </label>
+                      <input type="text" placeholder="Enter your full name" class="bg-gray-100 input input-bordered" required />
+                    </div>
+                    <div class="">
+                      <label class="label">
+                        <span class="label-text text-base font-bold">Your Email</span>
+                      </label>
+                      <input type="email" placeholder="Enter your email" class="bg-gray-100  input input-bordered" required />
+                    </div>
+
+                    <div class="">
+                      <label class="label">
+                        <span class="label-text text-base font-bold">Subject</span>
+                      </label>
+                      <input type="text" placeholder="Enter your subject" class="bg-gray-100  input input-bordered" required />
+                    </div>
+                    <div class="">
+                      <label class="label">
+                        <span class="label-text text-base font-bold">Phone Number</span>
+                      </label>
+                      <input type="number" placeholder="Enter your phone number" class="bg-gray-100  input input-bordered" required />
+                    </div>
                   </div>
-                  <div class="form-control">
+
+                  <div class="">
                     <label class="label">
-                      <span class="label-text">Password</span>
+                      <span class="label-text text-base font-bold">Message</span>
                     </label>
-                    <input type="password" placeholder="password" class="input input-bordered" required />
-                    <label class="label">
-                      <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
-                    </label>
+                    <textarea class="lg:w-full border max-h-[400px] bg-gray-100  border-gray-200 rounded-xl" name="" id="" cols="30" rows="10"></textarea>
                   </div>
-                  <div class="form-control mt-6">
-                    <button class="btn btn-primary">Login</button>
+
+                  <div class="form-control mt-6 col-span-2">
+                    <button class="btn text-white text-base font-bold bg-color-primary">Send Message</button>
                   </div>
                 </form>
               </div>
-              <!-- Hero Form end-->
             </div>
           </div>
+          <!-- Hero Form end-->
+        </section>
+        <!-- Social Media -->
+        <section class="space-y-6 mt-12 py-9 bg-gray-100 rounded-xl">
+              <h3 class="text-2xl font-extrabold text-center">Social Media</h3>
+              <span class="flex justify-center"><img src="./assets/Images/Social.svg" alt=""></span>
         </section>
     </main>
     <footer>
-
+        <!-- 1st -->
+        <!-- <div class="bg-[#BCED6D1A] rounded-xl w-full">
+          <div class="card-body space-y-6">
+            <span><img src="./assets/Images/Group-1.png" alt=""></span>
+            <p class="text-base text-gray-400 font-medium">Phone Number : <br>
+                <span class="font-extrabold text-[#131318]">(+62) 123-321-543</span>
+            </p>
+          </div>
+        </div> -->
     </footer>
 </body>
 </html>
